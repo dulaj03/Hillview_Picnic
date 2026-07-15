@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Great Summer Get-Together 🌿 | Hillview Picnic</title>
+  <meta name="description" content="You're invited to The Great Summer Get-Together! A beautiful picnic at Boyd Conservation Park, Vaughan. Thursday, August 06, 2026 at 11 AM. RSVP now!" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600&family=Dancing+Script:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- FLOATING PARTICLES -->
+  <div class="particles" id="particles"></div>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <div class="nav-logo">🌿 Hillview Picnic</div>
+      <div class="nav-links">
+        <a href="#details">Details</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#rsvp" class="nav-cta">RSVP Now</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <img src="picnic_hero.png" alt="Picnic at Boyd Conservation Park" class="hero-img" />
+      <div class="hero-overlay"></div>
+    </div>
+
+    <div class="floating-leaves">
+      <span class="leaf leaf-1">🍃</span>
+      <span class="leaf leaf-2">🌿</span>
+      <span class="leaf leaf-3">🍀</span>
+      <span class="leaf leaf-4">🌸</span>
+      <span class="leaf leaf-5">🍃</span>
+      <span class="leaf leaf-6">🌼</span>
+    </div>
+
+    <div class="hero-content">
+      <div class="badge animate-fadein" style="--delay: 0.2s">
+        <span>✨ You're Cordially Invited ✨</span>
+      </div>
+      <h1 class="hero-title animate-fadein" style="--delay: 0.5s">
+        The Great Summer<br /><em>Get-Together</em>
+      </h1>
+      <p class="hero-subtitle animate-fadein" style="--delay: 0.8s">A picnic celebration for friends &amp; family</p>
+
+      <div class="hero-meta animate-fadein" style="--delay: 1.1s">
+        <div class="meta-item">
+          <span class="meta-icon">📅</span>
+          <div>
+            <span class="meta-label">Date</span>
+            <span class="meta-value">Thursday, August 6, 2026</span>
+          </div>
+        </div>
+        <div class="meta-divider"></div>
+        <div class="meta-item">
+          <span class="meta-icon">⏰</span>
+          <div>
+            <span class="meta-label">Time</span>
+            <span class="meta-value">11:00 AM Onwards</span>
+          </div>
+        </div>
+        <div class="meta-divider"></div>
+        <div class="meta-item">
+          <span class="meta-icon">📍</span>
+          <div>
+            <span class="meta-label">Venue</span>
+            <span class="meta-value">Hillview — Boyd Conservation Park</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-actions animate-fadein" style="--delay: 1.4s">
+        <a href="#rsvp" class="btn btn-primary">RSVP Now 🎉</a>
+        <a href="https://maps.app.goo.gl/U3LizgUrM54sBfzt9?g_st=iw" target="_blank" class="btn btn-outline">Get Directions 📍</a>
+      </div>
+    </div>
+
+    <div class="hero-scroll animate-fadein" style="--delay: 2s">
+      <span>Scroll to explore</span>
+      <div class="scroll-arrow">▼</div>
+    </div>
+  </section>
+
+  <!-- COUNTDOWN SECTION -->
+  <section class="countdown-section">
+    <div class="countdown-inner">
+      <p class="countdown-label">Counting down to the big day! 🎊</p>
+      <div class="countdown-grid" id="countdown">
+        <div class="countdown-box">
+          <span class="cd-number" id="cd-days">--</span>
+          <span class="cd-unit">Days</span>
+        </div>
+        <div class="countdown-box">
+          <span class="cd-number" id="cd-hours">--</span>
+          <span class="cd-unit">Hours</span>
+        </div>
+        <div class="countdown-box">
+          <span class="cd-number" id="cd-minutes">--</span>
+          <span class="cd-unit">Minutes</span>
+        </div>
+        <div class="countdown-box">
+          <span class="cd-number" id="cd-seconds">--</span>
+          <span class="cd-unit">Seconds</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EVENT DETAILS -->
+  <section class="details-section" id="details">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Event Details</span>
+        <h2 class="section-title">Everything You Need to Know</h2>
+        <p class="section-sub">Come rain or shine — but we're praying for sunshine! ☀️</p>
+      </div>
+
+      <div class="details-grid">
+        <div class="detail-card reveal" style="--card-delay: 0.1s">
+          <div class="detail-icon">📍</div>
+          <h3>Venue</h3>
+          <p class="detail-main">Hillview Picnic Site</p>
+          <p class="detail-sub">Boyd Conservation Park</p>
+          <p class="detail-addr">8739 Islington Ave, Vaughan, ON, L4L 1A6</p>
+          <a href="https://maps.app.goo.gl/U3LizgUrM54sBfzt9?g_st=iw" target="_blank" class="detail-link">Open in Maps →</a>
+        </div>
+
+        <div class="detail-card reveal" style="--card-delay: 0.2s">
+          <div class="detail-icon">⏰</div>
+          <h3>Date &amp; Time</h3>
+          <p class="detail-main">Thursday, August 6</p>
+          <p class="detail-sub">2026</p>
+          <p class="detail-addr">Starting at 11:00 AM<br />Stay as long as you like!</p>
+        </div>
+
+        <div class="detail-card reveal" style="--card-delay: 0.3s">
+          <div class="detail-icon">🍽️</div>
+          <h3>Food &amp; Drinks</h3>
+          <p class="detail-main">Fully Provided</p>
+          <p class="detail-sub">Included for all guests</p>
+          <p class="detail-addr">Lunch, snacks &amp; refreshments will be served throughout the day</p>
+        </div>
+
+        <div class="detail-card reveal" style="--card-delay: 0.4s">
+          <div class="detail-icon">👨‍👩‍👧‍👦</div>
+          <h3>Who's Invited</h3>
+          <p class="detail-main">Friends &amp; Family</p>
+          <p class="detail-sub">Everyone is welcome!</p>
+          <p class="detail-addr">Bring the whole crew — kids, parents, grandparents, all!</p>
+        </div>
+
+        <div class="detail-card reveal" style="--card-delay: 0.5s">
+          <div class="detail-icon">📝</div>
+          <h3>RSVP Required</h3>
+          <p class="detail-main">Let us know you're coming</p>
+          <p class="detail-sub">Helps with planning</p>
+          <p class="detail-addr">Fill out the form below and your response is sent via WhatsApp instantly</p>
+        </div>
+
+        <div class="detail-card reveal" style="--card-delay: 0.6s">
+          <div class="detail-icon">🌳</div>
+          <h3>What to Bring</h3>
+          <p class="detail-main">Just Yourself!</p>
+          <p class="detail-sub">Optionally:</p>
+          <p class="detail-addr">Comfortable clothes, sunscreen, lawn chairs, good vibes &amp; a big smile 😊</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY / ABOUT PARK -->
+  <section class="gallery-section" id="gallery">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">The Venue</span>
+        <h2 class="section-title">Boyd Conservation Park</h2>
+        <p class="section-sub">A breathtaking green escape right in the heart of Vaughan 🌲</p>
+      </div>
+
+      <div class="gallery-layout reveal">
+        <div class="gallery-main">
+          <img src="picnic_hero.png" alt="Boyd Conservation Park scenic view" loading="lazy" />
+          <div class="gallery-caption">Hillview Picnic Site — Boyd Conservation Park</div>
+        </div>
+        <div class="gallery-side">
+          <div class="gallery-side-img">
+            <img src="park_nature.png" alt="Nature trails at Boyd Conservation Park" loading="lazy" />
+          </div>
+          <div class="gallery-side-img">
+            <img src="picnic_food.png" alt="Picnic food spread" loading="lazy" />
+          </div>
+        </div>
+      </div>
+
+      <div class="park-info reveal">
+        <div class="park-stat">
+          <span class="park-stat-num">🌳</span>
+          <span class="park-stat-label">Lush Green Trails</span>
+        </div>
+        <div class="park-stat">
+          <span class="park-stat-num">🏞️</span>
+          <span class="park-stat-label">Scenic Views</span>
+        </div>
+        <div class="park-stat">
+          <span class="park-stat-num">🧺</span>
+          <span class="park-stat-label">Picnic Grounds</span>
+        </div>
+        <div class="park-stat">
+          <span class="park-stat-num">🚗</span>
+          <span class="park-stat-label">Easy Parking</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MAP EMBED -->
+  <section class="map-section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Location</span>
+        <h2 class="section-title">Find Us Here</h2>
+      </div>
+      <div class="map-wrapper reveal">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2876.9738!2d-79.5757!3d43.8123!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b2e3e2b2e2b2b%3A0x0!2sBoyd+Conservation+Park%2C+8739+Islington+Ave%2C+Vaughan%2C+ON+L4L+1A6!5e0!3m2!1sen!2sca!4v1"
+          width="100%"
+          height="420"
+          style="border:0;"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Boyd Conservation Park Location">
+        </iframe>
+        <a href="https://maps.app.goo.gl/U3LizgUrM54sBfzt9?g_st=iw" target="_blank" class="map-open-btn">📍 Open in Google Maps</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- RSVP SECTION -->
+  <section class="rsvp-section" id="rsvp">
+    <div class="rsvp-bg-art"></div>
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">RSVP</span>
+        <h2 class="section-title">Will You Be Joining Us?</h2>
+        <p class="section-sub">Please let us know so we can plan the perfect day 🎉<br />Your response will be sent via WhatsApp instantly!</p>
+      </div>
+
+      <div class="rsvp-card reveal">
+        <div class="rsvp-deco-top">🌿 🌸 🌿</div>
+
+        <form id="rsvpForm" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="fullName">Full Name <span class="req">*</span></label>
+              <input type="text" id="fullName" name="fullName" placeholder="e.g. Sarah Johnson" required />
+              <span class="field-error" id="nameError">Please enter your name</span>
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" placeholder="e.g. +1 (416) 000-0000" />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="e.g. sarah@email.com" />
+          </div>
+
+          <div class="form-group">
+            <label>Are you attending? <span class="req">*</span></label>
+            <div class="radio-group" id="attendingGroup">
+              <label class="radio-card" for="yes">
+                <input type="radio" id="yes" name="attending" value="Yes, I'll be there! 🎉" required />
+                <span class="radio-inner">
+                  <span class="radio-emoji">🎉</span>
+                  <span class="radio-text">Yes, I'll be there!</span>
+                </span>
+              </label>
+              <label class="radio-card" for="no">
+                <input type="radio" id="no" name="attending" value="Sorry, I can't make it 😢" />
+                <span class="radio-inner">
+                  <span class="radio-emoji">😢</span>
+                  <span class="radio-text">Can't make it</span>
+                </span>
+              </label>
+              <label class="radio-card" for="maybe">
+                <input type="radio" id="maybe" name="attending" value="Maybe, I'll try! 🤞" />
+                <span class="radio-inner">
+                  <span class="radio-emoji">🤞</span>
+                  <span class="radio-text">Maybe!</span>
+                </span>
+              </label>
+            </div>
+            <span class="field-error" id="attendingError">Please select your attendance</span>
+          </div>
+
+          <div class="form-group" id="guestsGroup">
+            <label for="guests">Number of Guests (including yourself) <span class="req">*</span></label>
+            <div class="number-input-wrapper">
+              <button type="button" class="num-btn" id="decreaseGuests">−</button>
+              <input type="number" id="guests" name="guests" min="1" max="20" value="1" placeholder="1" required />
+              <button type="button" class="num-btn" id="increaseGuests">+</button>
+            </div>
+            <span class="field-error" id="guestsError">Please enter at least 1 guest</span>
+          </div>
+
+          <div class="form-group">
+            <label for="dietary">Dietary Requirements / Allergies</label>
+            <input type="text" id="dietary" name="dietary" placeholder="e.g. Vegetarian, Nut allergy, etc. (optional)" />
+          </div>
+
+          <div class="form-group">
+            <label for="message">Special Message for the Host 💌</label>
+            <textarea id="message" name="message" rows="3" placeholder="Say something nice... or bring a joke! 😄"></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-submit" id="submitBtn">
+            <span class="btn-text">Send RSVP via WhatsApp 💬</span>
+            <span class="btn-icon">→</span>
+          </button>
+
+          <p class="form-note">🔒 Your info is only sent directly to the organizer via WhatsApp. We don't store any data.</p>
+          <p class="form-credit">System Design and Developed by <a href="https://pandanlabs.net/" target="_blank" rel="noopener noreferrer">pandanlabs.net</a></p>
+
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">🌿 Hillview Picnic 2026</div>
+      <p class="footer-tagline">The Great Summer Get-Together</p>
+      <div class="footer-details">
+        <span>📅 August 6, 2026</span>
+        <span>⏰ 11:00 AM Onwards</span>
+        <span>📍 Boyd Conservation Park, Vaughan, ON</span>
+      </div>
+      <p class="footer-copy">Organized with ❤️ · Questions? <a href="https://wa.me/14163563729" target="_blank">WhatsApp Us</a></p>
+    </div>
+  </footer>
+
+  <!-- SUCCESS MODAL -->
+  <div class="modal-overlay" id="successModal">
+    <div class="modal-box">
+      <div class="modal-emoji">🎉</div>
+      <h3>Opening WhatsApp...</h3>
+      <p>Your RSVP is being sent! If WhatsApp doesn't open automatically, please <a href="#" id="waFallback">click here</a>.</p>
+      <button class="btn btn-primary" id="modalClose">Got it!</button>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
