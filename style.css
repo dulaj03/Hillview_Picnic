@@ -760,11 +760,65 @@ body {
   background: var(--cream);
 }
 
+.location-highlight {
+  background: var(--white);
+  border: 2px solid rgba(232,168,62,0.4);
+  border-radius: var(--radius);
+  padding: 24px 32px;
+  display: inline-block;
+  margin: 20px auto 16px;
+  box-shadow: var(--shadow-md);
+  color: var(--text-main);
+  font-size: 1.05rem;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.location-highlight strong {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.45rem;
+  color: var(--green-deep);
+  display: block;
+  margin-bottom: 6px;
+}
+
+.location-highlight .highlight-area {
+  display: inline-block;
+  background: var(--green-pale);
+  color: var(--green-mid);
+  padding: 4px 14px;
+  border-radius: 50px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
 .map-wrapper {
   position: relative;
   border-radius: var(--radius-xl);
   overflow: hidden;
   box-shadow: var(--shadow-lg);
+}
+
+.map-image-wrapper {
+  margin-bottom: 40px;
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+  border: 4px solid var(--white);
+}
+
+.static-map-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.map-image-wrapper:hover .static-map-img {
+  transform: scale(1.02);
 }
 
 .map-wrapper iframe {

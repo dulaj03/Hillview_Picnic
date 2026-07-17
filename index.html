@@ -157,7 +157,7 @@
           <h3>RSVP Required</h3>
           <p class="detail-main">Let us know you're coming</p>
           <p class="detail-sub">Helps with planning</p>
-          <p class="detail-addr">Fill out the form below and your response is sent via WhatsApp instantly</p>
+          <p class="detail-addr">Fill out the Google Form below to RSVP for the event.</p>
         </div>
 
         <div class="detail-card reveal" style="--card-delay: 0.5s">
@@ -222,6 +222,14 @@
       <div class="section-header reveal">
         <span class="section-tag">Location</span>
         <h2 class="section-title">Find Us Here</h2>
+        <div class="location-highlight">
+          <strong>Jack Darling Memorial Park</strong><br />
+          <span class="highlight-area">Picnic Area B</span><br />
+          1180 Lakeshore Rd W, Mississauga, ON L5H 1A1
+        </div>
+      </div>
+      <div class="map-image-wrapper reveal">
+        <img src="map.jpeg" alt="Jack Darling Memorial Park Picnic Area Map" class="static-map-img" />
       </div>
       <div class="map-wrapper reveal">
         <iframe
@@ -246,87 +254,24 @@
       <div class="section-header reveal">
         <span class="section-tag">RSVP</span>
         <h2 class="section-title">Will You Be Joining Us?</h2>
-        <p class="section-sub">Please let us know so we can plan the perfect day 🎉<br />Your response will be sent via WhatsApp instantly!</p>
+        <p class="section-sub">Please let us know so we can plan the perfect day 🎉<br />Fill out the form below to RSVP!</p>
       </div>
 
       <div class="rsvp-card reveal">
         <div class="rsvp-deco-top">🌿 🌸 🌿</div>
 
-        <form id="rsvpForm" novalidate>
-          <div class="form-row">
-            <div class="form-group">
-              <label for="fullName">Full Name <span class="req">*</span></label>
-              <input type="text" id="fullName" name="fullName" placeholder="e.g. Sarah Johnson" required />
-              <span class="field-error" id="nameError">Please enter your name</span>
-            </div>
-            <div class="form-group">
-              <label for="phone">Phone Number</label>
-              <input type="tel" id="phone" name="phone" placeholder="e.g. +1 (416) 000-0000" />
-            </div>
-          </div>
-
-          <div class="form-group">
-            <label for="email">Email Address</label>
-            <input type="email" id="email" name="email" placeholder="e.g. sarah@email.com" />
-          </div>
-
-          <div class="form-group">
-            <label>Are you attending? <span class="req">*</span></label>
-            <div class="radio-group" id="attendingGroup">
-              <label class="radio-card" for="yes">
-                <input type="radio" id="yes" name="attending" value="Yes, I'll be there! 🎉" required />
-                <span class="radio-inner">
-                  <span class="radio-emoji">🎉</span>
-                  <span class="radio-text">Yes, I'll be there!</span>
-                </span>
-              </label>
-              <label class="radio-card" for="no">
-                <input type="radio" id="no" name="attending" value="Sorry, I can't make it 😢" />
-                <span class="radio-inner">
-                  <span class="radio-emoji">😢</span>
-                  <span class="radio-text">Can't make it</span>
-                </span>
-              </label>
-              <label class="radio-card" for="maybe">
-                <input type="radio" id="maybe" name="attending" value="Maybe, I'll try! 🤞" />
-                <span class="radio-inner">
-                  <span class="radio-emoji">🤞</span>
-                  <span class="radio-text">Maybe!</span>
-                </span>
-              </label>
-            </div>
-            <span class="field-error" id="attendingError">Please select your attendance</span>
-          </div>
-
-          <div class="form-group" id="guestsGroup">
-            <label for="guests">Number of Guests (including yourself) <span class="req">*</span></label>
-            <div class="number-input-wrapper">
-              <button type="button" class="num-btn" id="decreaseGuests">−</button>
-              <input type="number" id="guests" name="guests" min="1" max="20" value="1" placeholder="1" required />
-              <button type="button" class="num-btn" id="increaseGuests">+</button>
-            </div>
-            <span class="field-error" id="guestsError">Please enter at least 1 guest</span>
-          </div>
-
-          <div class="form-group">
-            <label for="dietary">Dietary Requirements / Allergies</label>
-            <input type="text" id="dietary" name="dietary" placeholder="e.g. Vegetarian, Nut allergy, etc. (optional)" />
-          </div>
-
-          <div class="form-group">
-            <label for="message">Special Message for the Host 💌</label>
-            <textarea id="message" name="message" rows="3" placeholder="Say something nice... or bring a joke! 😄"></textarea>
-          </div>
-
-          <button type="submit" class="btn btn-submit" id="submitBtn">
-            <span class="btn-text">Send RSVP via WhatsApp 💬</span>
-            <span class="btn-icon">→</span>
-          </button>
-
-          <p class="form-note">🔒 Your info is only sent directly to the organizer via WhatsApp. We don't store any data.</p>
-          <p class="form-credit">System Design and Developed by <a href="https://pandanlabs.net/" target="_blank" rel="noopener noreferrer">pandanlabs.net</a></p>
-
-        </form>
+        <div class="google-form-wrapper" style="padding-bottom: 20px;">
+          <iframe 
+            src="https://forms.gle/uAW4hkFGqz6Wmb8o7" 
+            width="100%" 
+            height="800" 
+            frameborder="0" 
+            marginheight="0" 
+            marginwidth="0">
+            Loading…
+          </iframe>
+          <p class="form-credit" style="text-align: center; margin-top: 20px;">Invitation Design and Developed by <a href="https://pandanlabs.net/" target="_blank" rel="noopener noreferrer">pandanlabs.net</a></p>
+        </div>
       </div>
     </div>
   </section>
@@ -345,15 +290,6 @@
     </div>
   </footer>
 
-  <!-- SUCCESS MODAL -->
-  <div class="modal-overlay" id="successModal">
-    <div class="modal-box">
-      <div class="modal-emoji">🎉</div>
-      <h3>Opening WhatsApp...</h3>
-      <p>Your RSVP is being sent! If WhatsApp doesn't open automatically, please <a href="#" id="waFallback">click here</a>.</p>
-      <button class="btn btn-primary" id="modalClose">Got it!</button>
-    </div>
-  </div>
 
   <script src="app.js"></script>
 </body>
